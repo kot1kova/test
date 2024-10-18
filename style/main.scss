@@ -1,0 +1,129 @@
+@import "./reset";
+
+body {
+  background-color: #1e1e1e;
+  color: #e7e7e7;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  color: #e7e7e7;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  &__inner {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 168px;
+    width: 100%;
+    display: block;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__link {
+    color: #e7e7e7;
+  }
+}
+.hero {
+  &__inner {
+    padding: 240px 0;
+    height: 80vh;
+    text-align: center;
+  }
+  &__title {
+    font-size: 60px;
+  }
+}
+
+.scale {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    // overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .scl {
+    &-1 {
+      width: 100vh;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      background-image: url(https://assets-global.website-files.com/64bfa5eec3353671101c9bd1/65046861800bd75e8ce3e99d_10.png);
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 8;
+      transform: scale(1.2);
+    }
+    &-2 {
+      width: 100vh;
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      background-image: url(https://assets-global.website-files.com/64bfa5eec3353671101c9bd1/65046861800bd75e8ce3e99d_10.png);
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: scale(0.9);
+
+      z-index: 6;
+    }
+    &-3 {
+      width: 100vh;
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      background-image: url(https://assets-global.website-files.com/64bfa5eec3353671101c9bd1/65046861800bd75e8ce3e99d_10.png);
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: scale(0.7);
+
+      z-index: 4;
+    }
+    &-4 {
+      width: 100vh;
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      background-image: url(https://assets-global.website-files.com/64bfa5eec3353671101c9bd1/65046861800bd75e8ce3e99d_10.png);
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: scale(0.5);
+
+      z-index: 2;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: auto;
+  }
+  &__text {
+    text-align: center;
+    text-transform: uppercase;
+    // z-index: 12;
+    opacity: 1;
+  }
+}
